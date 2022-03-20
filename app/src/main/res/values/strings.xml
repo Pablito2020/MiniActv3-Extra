@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MiniActv3-extra</string>
+    <string name="information_text">Text from intent is:</string>
+    <string name="default_information_text">None</string>
 </resources>
