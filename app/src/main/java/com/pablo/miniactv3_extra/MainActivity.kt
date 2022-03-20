@@ -14,5 +14,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.resultText.text = intent.getStringExtra(Intent.EXTRA_TEXT)
+        binding.gotoThirdActivityButton.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

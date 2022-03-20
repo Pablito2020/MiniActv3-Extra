@@ -3,4 +3,9 @@
     <string name="information_text">Text from intent is:</string>
     <string name="default_information_text">None</string>
     <string name="url_info">Url from intent is:</string>
+    <string name="finish_button">Done</string>
+    <string name="example_edit_text">Dummy text</string>
+    <string name="info_text">Add some text!</string>
+    <string name="default_text_edittext">Dummy Text</string>
+    <string name="goto_third_activity_info">Goto Third Activity</string>
 </resources>
