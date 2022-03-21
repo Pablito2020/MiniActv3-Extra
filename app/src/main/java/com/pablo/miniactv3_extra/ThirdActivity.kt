@@ -13,14 +13,16 @@ class ThirdActivity : AppCompatActivity() {
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.finishButton.setOnClickListener {
-            val value = if (binding.editText.text.isEmpty()) {
-                getText(R.string.default_text_edittext)
-            } else {
-                binding.editText.text
-            }
-            intent.putExtra(ACTION_PICK_KEYS.RESULT.name, value)
+            val value = getResult()
+            intent.putExtra("RESULT", value)
             setResult(RESULT_OK, intent)
             finish()
         }
+    }
+
+    private fun getResult(): String {
+        if (binding.editText.text.isEmpty())
+            return getText(R.string.default_text_edittext).toString()
+        return binding.editText.text.toString()
     }
 }
